@@ -1,0 +1,10 @@
+
+numpy
+pandas
+requests
+pyreadr
+ucimlrepo
+altair>=5
+vl-convert-python
+jupyter
+ipykernel
