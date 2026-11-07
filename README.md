@@ -2,7 +2,7 @@
 
 This repository contains machine learning experiments using the RBG (Regressão Bem Geral) library, developed in a companion repository, and two public datasets: Rent99 and Dry Bean.
 
-The main objective of this project is to analyze and evaluate the pretty performance of the RBG through its application to different machine learning problems. The experiments focus on exploratory data analysis, data preprocessing, model training, cross-validation, hyperparameter tuning, model comparison, and evaluation.
+The main objective of this project is to analyze and evaluate the impressive performance of the RBG through its application to different machine learning problems. The experiments focus on exploratory data analysis, data preprocessing, model training, cross-validation, hyperparameter tuning, model comparison, and evaluation.
 
 ## Datasets
 
