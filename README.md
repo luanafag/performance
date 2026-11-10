@@ -19,7 +19,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Os notebooks já estão salvos com as saídas. Para reexecutar, a ordem é a da numeração; o `relatorio_final.ipynb` lê as tabelas que os notebooks 02, 04 e 05 gravam em `resultados/`, então ele vem por último. Os notebooks 02 e 04 levam alguns minutos por causa das árvores.
+Os notebooks 01, 03 e 05 estão salvos com as saídas; o 02, o 04 e o relatório precisam ser executados. Para reexecutar, a ordem é a da numeração; o `relatorio_final.ipynb` lê as tabelas que os notebooks 02, 04 e 05 gravam em `resultados/`, então ele vem por último. Os notebooks 02 e 04 levam alguns minutos por causa das árvores.
 
 ## Organização
 
@@ -59,8 +59,8 @@ O dicionário das variáveis está em [data/README.md](data/README.md).
 
 As tabelas com as métricas de todos os modelos no teste ficam em `resultados/` e são reunidas no `relatorio_final.ipynb`. Em resumo:
 
-- **Regressão**: a regressão linear (RMSE de cerca de 149 euros, R² de cerca de 0,51) e a rede neural (RMSE 147,7) praticamente empatam; os erros vêm principalmente dos aluguéis mais altos.
-- **Classificação**: a logística com cinco variáveis acerta cerca de 91,7% do teste e a rede neural 93,1%; os erros se concentram nos pares DERMASON × SIRA e CALI × BARBUNYA.
+- **Regressão** (RMSE no teste): polinomial de grau 2 146,3; rede neural 147,7; linear, lasso e ridge 148,8; bagging 151,0; random forest 154,8; árvores únicas 156,0 a 161,6. O R² fica perto de 0,5 em todos, e os erros vêm principalmente dos aluguéis mais altos.
+- **Classificação** (acurácia no teste): rede neural 93,1%; KNN 92,5%; logística 91,7%; QDA 91,7%; LDA 91,1%; árvores 89–90%; random forest 75,5%. Os erros se concentram nos pares DERMASON × SIRA e CALI × BARBUNYA.
 - As árvores da `rbg` são lentas, então no Dry Bean elas foram treinadas em uma subamostra de 1.500 grãos e com poucas árvores.
 
 ## Grupo
