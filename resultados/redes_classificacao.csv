@@ -1,0 +1,2 @@
+modelo,acuracia,acuracia_balanceada,f1_macro
+"Rede neural (MLP (128, 64))",0.931047197640118,0.9433518496463461,0.9434670610441408
