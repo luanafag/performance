@@ -1,0 +1,32 @@
+[project]
+name = "rbg"
+version = "0.1.0"
+description = "Basic Machine Learning Library"
+readme = "README.md"
+authors = [
+    { name = "fragadmsc", email = "damasceno.lucas512@gmail.com" },
+    { name = "lucca moulin"}
+]
+keywords = ["machine learning", "basic", "regression"]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "sphinx",
+]
+
+
+[project.optional-dependencies]
+test = ["pytest>=9.0"]
+
+[project.scripts]
+rbg = "rbg:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["test"]
+
