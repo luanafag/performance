@@ -1,10 +1,12 @@
-
+rbg-ml
 numpy
 pandas
-requests
-pyreadr
-ucimlrepo
 altair>=5
 vl-convert-python
 jupyter
 ipykernel
+
+# só para regenerar os CSVs com data/baixar_dados.py
+requests
+pyreadr
+ucimlrepo
